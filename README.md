@@ -13,14 +13,6 @@ Aplikacija koristi **klijent–server arhitekturu**:
 
 ---
 
-## Arhitektura sustava
-
-- Android aplikacija komunicira s backendom putem **REST API-ja**
-- Backend obrađuje zahtjeve, upravlja poslovnom logikom i pristupa bazama podataka
-- Podaci se razmjenjuju u **JSON** formatu
-
----
-
 ## Backend – Flask REST API
 
 ### Korištene tehnologije
@@ -40,17 +32,12 @@ Aplikacija koristi **klijent–server arhitekturu**:
 
 ### Pokretanje backend servera
 
-#### 1. Pozicioniranje u backend direktorij
-```bash
-cd backend
-```
-
-#### 2. Kreiranje virtualnog okruženja
+#### 1. Kreiranje virtualnog okruženja
 ```bash
 python -m venv venv
 ```
 
-#### 3. Aktivacija virtualnog okruženja Windows
+#### 2. Aktivacija virtualnog okruženja Windows
 ```bash
 venv\Scripts\activate
 ```
@@ -59,16 +46,16 @@ venv\Scripts\activate
 ```bash
 source venv/bin/activate
 ```
-#### 4. Instalacija ovisnosti
+#### 3. Instalacija ovisnosti
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 5. Pokretanje servera
+#### 4. Pokretanje servera
 ```bash
 python app.py
 ```
-#### 6. Pokretanje servera
+#### 5. Pokretanje servera
 ```bash
 http://127.0.0.1:5000/
 ```
